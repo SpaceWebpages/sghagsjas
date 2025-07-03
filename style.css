@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: auto;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+header nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(to left, #2A7B9B, #346B46);
+}
+header nav .links{
+    line-height: 100px;
+    float: right;
+}
+header nav .links a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 30px;
+    outline: none;
+    letter-spacing: 1px;
+}
+header nav .title{
+    position: fixed;
+    line-height: 100px;
+    margin: 0 50px;
+}
+header nav .title h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+header nav .title a{
+    text-decoration: none;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    flex-wrap: wrap;
+}
+main .lang{
+    background-color: rgb(0, 162, 255);
+    width: 80rem;
+    height: 4rem;
+    display: flex;
+}
+main .lang .en{
+    line-height: 4rem;
+}
+main .lang .oth{
+    line-height: 4rem;
+    margin: 0 6rem;
+}
+main .lang .en select, main .lang .oth select{
+    font-size: 22px;
+    padding: 1rem 20rem 1rem 0;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-left: 3rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+main .lang .en select option, main .lang .oth select option{
+    background-color: gray;
+    font-size: 15px;
+}
+main .trns_box{
+    height: 25rem;
+    width: 40rem;
+    border: 1px solid #b5b5b5;
+}
+main .trns_box textarea{
+    resize: none;
+    outline: none;
+    border: none;
+    width: 35rem;
+    height: 18rem;
+    font-size: 20px;
+    margin: 2rem;
+    background-color: transparent;
+
+}
+main .lang .change img{
+    position: relative;
+    top: .5rem;
+    left: 4.8rem;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.btn{
+    position: absolute;
+    left: 48rem;
+    padding: .8rem 2.5rem;
+    border-radius: 50px;
+    border: .5px solid silver;
+    outline: none;
+    background-color: transparent;
+    transform: translate(-50%, 2rem);
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all .3s;
+}
+.btn:hover{
+    background-color: #2ea2d0;
+    color: #fff;
+}
+main .trns_box #mic, main .trns_box #clip{
+    margin-top: -1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    padding: 0;
+}
+main .trns_box #mic img, main .trns_box #clip img{
+    width: 2rem;
+}
+
+.side-icon{
+    position: fixed;
+    top: 20rem;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(214, 214, 214);
+    cursor: pointer;
+}
+.side-icon img{
+    width: 4rem;
+}
+.dict{
+    position: fixed;
+    top: 25rem;
+    right: 2rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(214, 214, 214);
+    cursor: pointer;
+    display: flex;
+}
+.dict img{
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+}
+.dwn{
+    position: fixed;
+    right: 8rem;
+    bottom: 1.8rem;
+    padding: .8rem 2.5rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #59ef37;
+    color: #ffff;
+    font-weight: 100;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    transition: all .3s;
+}
+
+
+/* Dictionary Section */
+
+.main_dict{
+    width: 100%;
+    display: inline-block;
+    padding-top: 8rem;
+}
+.main_dict .dict_title{
+    margin-left: 8rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.main_dict .dict_title h2{
+    font-size: 35px;
+    color: #1e1e1e;
+}
+.main_dict .dict_title .s1{
+    margin: .6rem;
+}
+.main_dict .dict_title .s1 select{
+    border: .5px solid silver;
+    outline: none;
+    padding: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.main_dict .dict_title .s1 select option{
+    font-size: 15px;
+}
+.main_dict .dict_box{
+    margin: 1rem auto;
+    width: 80rem;
+    height: 30rem;
+    border: .5px solid gray;
+    border-radius: 8px;
+}
+.main_dict .dict_box .s2_d{
+    display: flex;
+}
+.main_dict .dict_box .s2_d p{
+    margin: 2rem auto;
+    border: .5px solid silver;
+    padding: 10px 1rem;
+    border-radius: 50px;
+    font-size: 18px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.main_dict .dict_box .s2_d p:hover{
+    background-color: #007BFF;
+    color: #fff;
+}
+.main_dict .dict_box .sd_l4{
+    height: 22rem;
+    width: 55rem;
+    margin: auto;
+    border: .5px solid silver;
+    overflow-y: scroll;
+}
+.main_dict .dict_box .sd_l4 .sp_23{
+    display: flex;
+    margin-bottom: -2.5rem;
+}
+.main_dict .dict_box .sd_l4 .sp_23 p{
+    margin: 2rem auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 18rem;
+}
+.main_dict .dict_box .sd_l4 .sp_23 .arrow{
+    margin: 1.5rem;
+}
+.main_dict .dict_box .sd_l4 .sp_23 .arrow img{
+    width: 3rem;   
+}
+
+/* Media Query */
+
+@media screen and (max-width: 425px) {
+    header nav{
+        height: 80px;
+    }
+    header nav .title{
+        line-height: 80px;
+    }
+    header nav .title h2{
+        font-size: 30px;
+        margin: 0 -2rem;
+    }
+    header nav .links{
+        line-height: 80px;
+        float: right;
+        margin-top: 5rem;
+        padding: 2rem 0;
+        background-color: rgb(199, 198, 198);
+    }
+    header nav .links a{
+        font-size: 15px;
+        margin: -2rem 1rem;
+        display: block;
+        color: black;
+    }
+    main{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .dict, .side-icon{
+        display: none;
+    }
+}
+/* Contact Page Grid Layout */
+.contact-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Grid container for developers */
+.developer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Developer card */
+.developer {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 280px;
+}
+
+.developer h4 {
+    margin-bottom: 10px;
+    color: #2A7B9B;
+    font-size: 20px;
+}
+
+.developer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.developer a {
+    color: #007BFF;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+.developer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive for small screens */
+/* @media screen and (max-width: 768px) {
+    .developer {
+        width: 100%;
+    }
+
+    .contact-section {
+        padding: 10px;
+    }
+
+    .developer-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+} */
